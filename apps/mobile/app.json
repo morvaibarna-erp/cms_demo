@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "puck-sanity-demo",
+    "slug": "puck-sanity-demo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-status-bar"
+    ]
+  }
+}

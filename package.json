@@ -1,0 +1,30 @@
+{
+  "name": "puck-sanity-demo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "setup:env": "node scripts/setup-env.mjs",
+    "dev": "concurrently -n studio,web -c magenta,cyan \"npm:dev:studio\" \"npm:dev:web\"",
+    "dev:studio": "npm run dev -w @acme/studio",
+    "dev:web": "npm run dev -w @acme/web",
+    "dev:mobile": "npm run start -w @acme/mobile",
+    "seed": "npm run seed -w @acme/studio",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "new:component": "node scripts/new-component.mjs"
+  },
+  "overrides": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "typescript": "^5.6.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

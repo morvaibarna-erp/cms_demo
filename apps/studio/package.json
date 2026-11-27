@@ -1,0 +1,27 @@
+{
+  "name": "@acme/studio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "seed": "sanity exec scripts/seed.ts --with-user-token",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@acme/contracts": "*",
+    "@acme/ui": "*",
+    "@puckeditor/core": "^0.24.0",
+    "@sanity/ui": "^3.0.0",
+    "@sanity/vision": "^4.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native-web": "^0.21.0",
+    "sanity": "^4.0.0",
+    "styled-components": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0"
+  }
+}

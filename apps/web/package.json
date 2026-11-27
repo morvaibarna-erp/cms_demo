@@ -1,0 +1,25 @@
+{
+  "name": "@acme/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4000",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@acme/contracts": "*",
+    "@acme/ui": "*",
+    "@sanity/client": "^7.0.0",
+    "next": "^15.5.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0"
+  }
+}
